@@ -1,17 +1,17 @@
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
-        <><h1>ToDo App by Kang Xingyuan!</h1><Container>
-            {/* <p className="text-center">ToDo App by Kang Xingyuan</p> */}
+        <Container>
+            <p className="text-center">ToDo App by Kang Xingyuan</p>
             <Row>
-                {/* <p className="text-center">ToDo App by Kang Xingyuan</p> */}
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
-        </Container></>
+        </Container>
     );
 }
+
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);

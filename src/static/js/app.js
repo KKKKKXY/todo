@@ -1,15 +1,15 @@
 function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
-        <Container>
+        <><h1>ToDo App by Kang Xingyuan!</h1><Container>
             {/* <p className="text-center">ToDo App by Kang Xingyuan</p> */}
             <Row>
-            <p className="text-center">ToDo App by Kang Xingyuan</p>
+                {/* <p className="text-center">ToDo App by Kang Xingyuan</p> */}
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
             </Row>
-        </Container>
+        </Container></>
     );
 }
 
@@ -55,7 +55,7 @@ function TodoListCard() {
         <React.Fragment>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
-                <p className="text-center">No items yet! Add one above!</p>
+                <p className="text-center">No items yet! Add one above! dddddddd</p>
             )}
             {items.map(item => (
                 <ItemDisplay
